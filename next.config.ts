@@ -74,6 +74,11 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  // Required by @opennextjs/cloudflare. We chain `next build` ourselves in the
+  // npm `build` script (so OpenNext is invoked with `--skipNextBuild`), which
+  // means we have to declare standalone output here instead of relying on
+  // OpenNext's auto-injection.
+  output: 'standalone',
   async headers() {
     return [
       {

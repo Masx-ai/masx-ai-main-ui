@@ -4,13 +4,20 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && opennextjs-cloudflare build --skipNextBuild",
+    "build:next": "next build",
+    "build:ci": "npm run lint && tsc --noEmit && npm run build",
     "start": "next start",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
+    "preview": "npm run build && opennextjs-cloudflare preview",
+    "predeploy": "npm run build",
+    "deploy": "wrangler deploy",
+    "preupload": "npm run build",
+    "upload": "wrangler versions upload",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
     "lint": "next lint"
+  },
+  "engines": {
+    "node": ">=20.10.0"
   },
   "dependencies": {
     "@types/three": "^0.184.0",
