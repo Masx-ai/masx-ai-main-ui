@@ -140,7 +140,7 @@ function Footer() {
                   <a
                     href="https://forecast.masxai.com/"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     className="hover:text-signal transition-colors cursor-hover"
                   >
                     Geopolitical Forecast ↗
@@ -150,7 +150,7 @@ function Footer() {
                   <a
                     href="https://bt.masxai.com/"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     className="hover:text-signal transition-colors cursor-hover"
                   >
                     Bittensor Forecast ↗
@@ -185,10 +185,10 @@ function Footer() {
             <span>© {new Date().getFullYear()} MASX AI · Germany / Remote</span>
           </div>
           <div className="flex gap-6">
-            <a className="hover:text-signal cursor-hover" href="https://x.com/masxai" target="_blank" rel="noreferrer">
+            <a className="hover:text-signal cursor-hover" href="https://x.com/masxai" target="_blank" rel="noopener noreferrer">
               X / Twitter
             </a>
-            <a className="hover:text-signal cursor-hover" href="https://linkedin.com/company/masxai" target="_blank" rel="noreferrer">
+            <a className="hover:text-signal cursor-hover" href="https://linkedin.com/company/masxai" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
           </div>

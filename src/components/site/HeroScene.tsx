@@ -27,8 +27,11 @@ export function HeroScene({ variant = 'duo' }: { variant?: Variant }) {
         powerPreference: 'high-performance',
       });
     } catch {
-      mount.innerHTML =
-        '<div class="absolute inset-0 flex items-center justify-center text-mono text-xs text-muted-foreground uppercase tracking-widest">WebGL unavailable</div>';
+      const fallback = document.createElement('div');
+      fallback.className =
+        'absolute inset-0 flex items-center justify-center text-mono text-xs text-muted-foreground uppercase tracking-widest';
+      fallback.textContent = 'WebGL unavailable';
+      mount.replaceChildren(fallback);
       return;
     }
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));

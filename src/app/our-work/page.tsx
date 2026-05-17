@@ -1,7 +1,28 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import { SiteShell } from '@/components/site/SiteShell';
 import { SectionLabel } from '@/components/site/Atoms';
 import { CaseStudy } from '@/components/site/CaseStudy';
+
+export const metadata: Metadata = {
+  title: 'Our Work',
+  description:
+    'See the MASX AI platforms for geopolitical forecasting and Bittensor intelligence, both running autonomous, calibrated prediction pipelines.',
+  alternates: {
+    canonical: '/our-work',
+  },
+  openGraph: {
+    title: 'Our Work | MASX AI',
+    description:
+      'Two production MASX AI platforms run daily forecasting pipelines for geopolitical events and Bittensor subnet intelligence.',
+    url: '/our-work',
+  },
+  twitter: {
+    title: 'Our Work | MASX AI',
+    description:
+      'Two production MASX AI platforms run daily forecasting pipelines for geopolitical events and Bittensor subnet intelligence.',
+  },
+};
 
 export default function OurWorkPage() {
   return (

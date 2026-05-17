@@ -1,6 +1,27 @@
+import type { Metadata } from 'next';
 import { SiteShell } from '@/components/site/SiteShell';
 import { SectionLabel } from '@/components/site/Atoms';
 import { HeroSceneLoader as HeroScene } from '@/components/site/HeroSceneLoader';
+
+export const metadata: Metadata = {
+  title: 'How We Do It',
+  description:
+    'Explore the MASX AI forecasting architecture: autonomous ingestion, doctrine routing, anomaly detection, calibration, resolution, and Brier scoring.',
+  alternates: {
+    canonical: '/how-we-do-it',
+  },
+  openGraph: {
+    title: 'How We Do It | MASX AI',
+    description:
+      'The MASX AI engine turns domain signals into calibrated forecasts through autonomous pipelines, mathematical grounding, and continuous resolution.',
+    url: '/how-we-do-it',
+  },
+  twitter: {
+    title: 'How We Do It | MASX AI',
+    description:
+      'The MASX AI engine turns domain signals into calibrated forecasts through autonomous pipelines, mathematical grounding, and continuous resolution.',
+  },
+};
 
 const GEO_STEPS = [
   {

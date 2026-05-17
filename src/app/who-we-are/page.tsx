@@ -1,6 +1,27 @@
+import type { Metadata } from 'next';
 import { SiteShell } from '@/components/site/SiteShell';
 import { Marquee, SectionLabel } from '@/components/site/Atoms';
 import { HeroSceneLoader as HeroScene } from '@/components/site/HeroSceneLoader';
+
+export const metadata: Metadata = {
+  title: 'Who We Are',
+  description:
+    'Meet MASX AI, the forecasting studio building autonomous, self-correcting intelligence systems with Brier-scored predictions and 35 doctrine agents.',
+  alternates: {
+    canonical: '/who-we-are',
+  },
+  openGraph: {
+    title: 'Who We Are | MASX AI',
+    description:
+      'A forecasting studio building autonomous intelligence systems that score every prediction, resolve against ground truth, and improve over time.',
+    url: '/who-we-are',
+  },
+  twitter: {
+    title: 'Who We Are | MASX AI',
+    description:
+      'A forecasting studio building autonomous intelligence systems that score every prediction, resolve against ground truth, and improve over time.',
+  },
+};
 
 const PRINCIPLES = [
   {

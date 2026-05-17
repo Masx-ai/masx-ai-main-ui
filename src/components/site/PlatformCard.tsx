@@ -15,7 +15,7 @@ export function PlatformCard({ tag, title, blurb, href, sceneVariant }: Platform
     <Link
       href={href}
       target="_blank"
-      rel="noreferrer"
+      rel="noopener noreferrer"
       className="group relative aspect-[4/5] md:aspect-[5/6] overflow-hidden rounded-sm border border-border bg-card cursor-hover"
     >
       <div className="absolute inset-0 opacity-80 group-hover:opacity-100 transition-opacity">

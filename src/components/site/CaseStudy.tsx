@@ -35,7 +35,7 @@ export function CaseStudy({ index, eyebrow, title, subtitle, body, bullets, href
               </li>
             ))}
           </ul>
-          <Link href={href} target="_blank" rel="noreferrer" className="mt-8 inline-flex items-center gap-3 text-mono text-xs uppercase tracking-[0.2em] text-signal hover:gap-5 transition-all cursor-hover">
+          <Link href={href} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex items-center gap-3 text-mono text-xs uppercase tracking-[0.2em] text-signal hover:gap-5 transition-all cursor-hover">
             <span className="h-px w-10 bg-signal" />Visit platform ↗
           </Link>
         </div>

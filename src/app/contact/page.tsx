@@ -1,6 +1,27 @@
+import type { Metadata } from 'next';
 import { SiteShell } from '@/components/site/SiteShell';
 import { SectionLabel } from '@/components/site/Atoms';
 import { ContactForm } from '@/components/site/ContactForm';
+
+export const metadata: Metadata = {
+  title: 'Contact',
+  description:
+    'Contact MASX AI about autonomous forecasting systems, enterprise access, Bittensor intelligence, or geopolitical prediction pipelines.',
+  alternates: {
+    canonical: '/contact',
+  },
+  openGraph: {
+    title: 'Contact | MASX AI',
+    description:
+      'Reach MASX AI for enterprise forecasting systems, platform access, and autonomous intelligence partnerships.',
+    url: '/contact',
+  },
+  twitter: {
+    title: 'Contact | MASX AI',
+    description:
+      'Reach MASX AI for enterprise forecasting systems, platform access, and autonomous intelligence partnerships.',
+  },
+};
 
 function Info({ label, value }: { label: string; value: string }) {
   return (

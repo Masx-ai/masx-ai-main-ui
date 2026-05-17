@@ -9,10 +9,14 @@ lerna-debug.log*
 
 node_modules
 .next
+.open-next
+.wrangler
 out
 dist
 dist-ssr
 *.local
+.dev.vars
+cloudflare-env.d.ts
 
 # Editor directories and files
 .vscode/*

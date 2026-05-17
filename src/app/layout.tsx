@@ -1,5 +1,13 @@
 import type { Metadata } from 'next';
 import { Inter, Space_Grotesk, JetBrains_Mono } from 'next/font/google';
+import {
+  SITE_DESCRIPTION,
+  SITE_NAME,
+  buildOrganizationJsonLd,
+  buildWebSiteJsonLd,
+  getSiteUrl,
+  serializeJsonLd,
+} from '@/lib/site';
 import './globals.css';
 
 const inter = Inter({
@@ -20,16 +28,18 @@ const jetbrainsMono = JetBrains_Mono({
   display: 'swap',
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim() || 'https://masxai.com';
+const siteUrl = getSiteUrl();
+const siteName = SITE_NAME;
+const defaultDescription = SITE_DESCRIPTION;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  applicationName: siteName,
   title: {
-    default: 'MASX AI | Predictive Intelligence Engine',
+    default: 'MASX AI | Autonomous Forecasting Engine',
     template: '%s | MASX AI',
   },
-  description:
-    'MASX AI is a predictive intelligence engine. Two pipelines (geopolitical intelligence via 35 doctrine agents, Bittensor network health via 10 anomaly detectors) producing calibrated, Brier-scored probabilistic predictions with full resolution lifecycle.',
+  description: defaultDescription,
   keywords: [
     'MASX AI',
     'strategic forecasting',
@@ -46,24 +56,41 @@ export const metadata: Metadata = {
     'forecasting engine',
   ],
   authors: [{ name: 'MASX AI' }],
+  creator: 'MASX AI',
+  publisher: 'MASX AI',
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: '/',
-    siteName: 'MASX AI',
+    siteName,
     title: 'MASX AI | Autonomous Strategic Forecasting Engine',
-    description:
-      'Two autonomous forecasting pipelines. 35 doctrine agents. 50+ Bittensor subnets. Brier-scored. Self-correcting. Make tomorrow legible.',
+    description: defaultDescription,
   },
   twitter: {
     card: 'summary_large_image',
     site: '@masxai',
+    creator: '@masxai',
     title: 'MASX AI | Autonomous Strategic Forecasting Engine',
-    description:
-      'Dual-pipeline forecasting engine: geopolitical intelligence via 35 doctrine agents + Bittensor network health via 10 anomaly detectors. Calibrated. Brier-scored. Autonomous.',
+    description: defaultDescription,
   },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
 };
+
+const organizationJsonLd = buildOrganizationJsonLd(siteUrl);
+const websiteJsonLd = buildWebSiteJsonLd(siteUrl);
 
 export default function RootLayout({
   children,
@@ -72,7 +99,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable}`}>
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: serializeJsonLd(organizationJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: serializeJsonLd(websiteJsonLd) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

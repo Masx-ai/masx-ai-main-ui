@@ -1,8 +1,15 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import { SiteShell } from '@/components/site/SiteShell';
 import { Marquee, SectionLabel } from '@/components/site/Atoms';
 import { PlatformCard } from '@/components/site/PlatformCard';
 import { HeroSceneLoader as HeroScene } from '@/components/site/HeroSceneLoader';
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/',
+  },
+};
 
 export default function Home() {
   return (

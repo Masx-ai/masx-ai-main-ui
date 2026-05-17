@@ -1,0 +1,4 @@
+NEXTJS_ENV=development
+
+# Optional: override the canonical URL used by metadata, robots, and sitemap.
+# NEXT_PUBLIC_SITE_URL=https://masxai.com
