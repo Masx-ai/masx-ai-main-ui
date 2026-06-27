@@ -1,0 +1,39 @@
+MASX AI — Proprietary License
+SPDX-License-Identifier: LicenseRef-MASX-Proprietary
+
+Copyright (c) 2025-present Ateet Vatan Bahmani. All rights reserved.
+
+This software, together with its source code, documentation, models,
+configuration, and associated materials (the "Software"), is the
+proprietary and confidential property of Ateet Vatan Bahmani ("MASX AI").
+
+MASX AI is a platform for discovering and surfacing events and signals of
+global and regional significance.
+
+NO LICENSE IS GRANTED BY THIS FILE.
+
+Access to, or possession of, the Software — including via any source
+repository — does NOT grant any right to use, copy, reproduce, modify,
+merge, publish, distribute, sublicense, sell, or create derivative works
+of the Software, in whole or in part.
+
+Any use of the Software is permitted ONLY under a separate written
+agreement with MASX AI (for example, a Subscription Agreement or End User
+License Agreement — see EULA.md). In the absence of such an agreement, all
+rights are reserved and no use is authorized.
+
+Without limiting the above, you may NOT:
+  1. copy, modify, distribute, sublicense, or sell the Software;
+  2. reverse-engineer, decompile, or disassemble the Software;
+  3. use the Software to build or operate a competing product or service;
+  4. remove or alter any copyright, license, or proprietary notice.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF,
+OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+For licensing inquiries: Ateet Vatan Bahmani <admin@masxai.com>

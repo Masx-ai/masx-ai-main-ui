@@ -1,4 +1,19 @@
 'use client';
+/*
+ * Copyright (c) 2025-present Ateet Vatan Bahmani
+ * Project: MASX AI
+ * Author: Ateet Vatan Bahmani <admin@masxai.com> | @masxai
+ * All rights reserved.
+ *
+ * This source code is the proprietary and confidential property of
+ * Ateet Vatan Bahmani. Unauthorized copying, distribution, modification,
+ * or use of this file, via any medium, is strictly prohibited without
+ * the prior written permission of the copyright holder.
+ *
+ * SPDX-License-Identifier: LicenseRef-MASX-Proprietary
+ * See the LICENSE file in the project root for full terms.
+ */
+
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -110,6 +125,28 @@ function Header({
 }
 
 function Footer() {
+  const [subscribed, setSubscribed] = useState(false);
+
+  async function handleSubscribe(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const raw = new FormData(form).get('email');
+    const email = (typeof raw === 'string' ? raw : '').trim();
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ kind: 'subscribe', email }),
+      });
+      if (res.ok) {
+        setSubscribed(true);
+        form.reset();
+      }
+    } catch {
+      // Low-stakes convenience: fail quietly rather than disrupt the footer.
+    }
+  }
+
   return (
     <footer className="relative z-10 mt-32 border-t border-border bg-ink">
       <div className="px-6 md:px-10 py-16">
@@ -162,19 +199,30 @@ function Footer() {
               <p className="text-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-4">
                 Subscribe
               </p>
-              <form
-                onSubmit={(e) => e.preventDefault()}
-                className="flex border-b border-border pb-2"
-              >
-                <input
-                  type="email"
-                  placeholder="email@domain.com"
-                  className="flex-1 bg-transparent text-sm placeholder:text-muted-foreground focus:outline-none"
-                />
-                <button className="text-mono text-xs uppercase tracking-[0.2em] text-signal cursor-hover">
-                  →
-                </button>
-              </form>
+              {subscribed ? (
+                <p className="text-sm text-muted-foreground border-b border-border pb-2">
+                  ✓ Thanks — we&apos;ll be in touch.
+                </p>
+              ) : (
+                <form
+                  onSubmit={handleSubscribe}
+                  className="flex border-b border-border pb-2"
+                >
+                  <input
+                    name="email"
+                    type="email"
+                    required
+                    placeholder="email@domain.com"
+                    className="flex-1 bg-transparent text-sm placeholder:text-muted-foreground focus:outline-none"
+                  />
+                  <button
+                    type="submit"
+                    className="text-mono text-xs uppercase tracking-[0.2em] text-signal cursor-hover"
+                  >
+                    →
+                  </button>
+                </form>
+              )}
             </div>
           </div>
         </div>
@@ -185,6 +233,12 @@ function Footer() {
             <span>© {new Date().getFullYear()} MASX AI · Germany / Remote</span>
           </div>
           <div className="flex gap-6">
+            <Link className="hover:text-signal cursor-hover" href="/privacy">
+              Privacy
+            </Link>
+            <Link className="hover:text-signal cursor-hover" href="/impressum">
+              Impressum
+            </Link>
             <a className="hover:text-signal cursor-hover" href="https://x.com/masxai" target="_blank" rel="noopener noreferrer">
               X / Twitter
             </a>
