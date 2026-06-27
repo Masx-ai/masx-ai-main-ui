@@ -118,7 +118,7 @@ export function ContactForm() {
       )}
       {status === 'sent' && (
         <p className="text-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-          Thanks — we&apos;ll reply within 24 hours.
+          Thanks - we&apos;ll reply within 24 hours.
         </p>
       )}
     </form>

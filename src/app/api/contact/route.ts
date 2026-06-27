@@ -30,7 +30,7 @@ interface ContactPayload {
   email?: string;
   interest?: string;
   message?: string;
-  company?: string; // honeypot — must stay empty
+  company?: string; // honeypot - must stay empty
 }
 
 function isEmail(value: string): boolean {
@@ -81,7 +81,7 @@ export async function POST(request: Request): Promise<Response> {
   if (!apiKey) {
     console.error('[contact] RESEND_API_KEY is not configured.');
     return NextResponse.json(
-      { error: 'Messaging is temporarily unavailable — please email admin@masxai.com.' },
+      { error: 'Messaging is temporarily unavailable - please email admin@masxai.com.' },
       { status: 503 },
     );
   }
@@ -91,16 +91,16 @@ export async function POST(request: Request): Promise<Response> {
 
   const subject =
     kind === 'subscribe'
-      ? `New subscription request — ${email}`
-      : `New website enquiry — ${interest || 'General'}`;
+      ? `New subscription request - ${email}`
+      : `New website enquiry - ${interest || 'General'}`;
 
   const lines =
     kind === 'subscribe'
       ? [`Please add this address to MASX AI updates:`, email]
       : [
-          `Name: ${name || '—'}`,
+          `Name: ${name || '-'}`,
           `Email: ${email}`,
-          `Interested in: ${interest || '—'}`,
+          `Interested in: ${interest || '-'}`,
           '',
           message || '(no message)',
         ];
@@ -124,14 +124,14 @@ export async function POST(request: Request): Promise<Response> {
       const detail = await res.text().catch(() => '');
       console.error('[contact] Resend responded', res.status, detail);
       return NextResponse.json(
-        { error: 'We could not send your message — please email admin@masxai.com.' },
+        { error: 'We could not send your message - please email admin@masxai.com.' },
         { status: 502 },
       );
     }
   } catch (err) {
     console.error('[contact] delivery failed', err);
     return NextResponse.json(
-      { error: 'We could not send your message — please email admin@masxai.com.' },
+      { error: 'We could not send your message - please email admin@masxai.com.' },
       { status: 502 },
     );
   }

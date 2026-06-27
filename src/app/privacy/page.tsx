@@ -28,7 +28,7 @@ const LAST_UPDATED = 'June 27, 2026';
 export const metadata: Metadata = {
   title: 'Privacy Policy',
   description:
-    'How MASX AI collects, uses, and protects personal data on masxai.com. A GDPR-aligned privacy notice — no tracking cookies, no third-party analytics.',
+    'How MASX AI collects, uses, and protects personal data on masxai.com. A GDPR-aligned privacy notice - no tracking cookies, no third-party analytics.',
   alternates: {
     canonical: '/privacy',
   },
@@ -79,7 +79,7 @@ export default function PrivacyPage() {
             Protection Regulation (GDPR).
           </p>
           <div className="rounded-sm border border-border bg-ink/40 p-5 text-sm">
-            <p className="text-foreground">MASX AI — Ateet Vatan Bahmani</p>
+            <p className="text-foreground">MASX AI - Ateet Vatan Bahmani</p>
             <p className="mt-1">Viehofer Strasse 32, 45127 Essen, Germany</p>
             <p className="mt-1">
               Contact: <MailLink address="admin@masxai.com" />
@@ -91,8 +91,8 @@ export default function PrivacyPage() {
           <p>
             This policy covers our corporate website at{' '}
             <span className="text-foreground">masxai.com</span> only. Our product
-            platforms — the Geopolitical Forecast and Bittensor Forecast
-            applications — are operated on separate domains and are governed by
+            platforms - the Geopolitical Forecast and Bittensor Forecast
+            applications - are operated on separate domains and are governed by
             their own privacy notices presented within those services.
           </p>
         </Section>
@@ -103,8 +103,8 @@ export default function PrivacyPage() {
             items={[
               <>
                 <span className="text-foreground">Information you send us.</span>{' '}
-                When you submit the contact or subscribe form — or email us
-                directly — we receive what you choose to share (typically your
+                When you submit the contact or subscribe form - or email us
+                directly - we receive what you choose to share (typically your
                 name, email address, the topic, and your message). Submissions are
                 delivered to our inbox by our email provider; we do not store them
                 in a database, and we never use them for advertising or profiling.
@@ -112,7 +112,7 @@ export default function PrivacyPage() {
               <>
                 <span className="text-foreground">Technical access data.</span> Like
                 any website, our hosting infrastructure automatically records
-                limited technical information needed to deliver pages securely —
+                limited technical information needed to deliver pages securely -
                 such as your IP address, browser and device type, the page
                 requested, and a timestamp. These appear in short-lived server logs.
               </>,
@@ -148,12 +148,12 @@ export default function PrivacyPage() {
             items={[
               <>
                 <span className="text-foreground">To respond to your enquiry</span>{' '}
-                — to take steps at your request prior to any agreement, Art. 6(1)(b),
+                - to take steps at your request prior to any agreement, Art. 6(1)(b),
                 and/or your consent in sending us the message, Art. 6(1)(a).
               </>,
               <>
                 <span className="text-foreground">To operate and secure the site</span>{' '}
-                — our legitimate interest in delivering content reliably and
+                - our legitimate interest in delivering content reliably and
                 preventing abuse, Art. 6(1)(f).
               </>,
             ]}
@@ -168,13 +168,13 @@ export default function PrivacyPage() {
           <Bullets
             items={[
               <>
-                <span className="text-foreground">Cloudflare</span> — hosting,
+                <span className="text-foreground">Cloudflare</span> - hosting,
                 content delivery, and edge security for this site. Cloudflare may
                 process technical access data on our behalf to serve and protect the
                 site.
               </>,
               <>
-                <span className="text-foreground">Resend</span> — our email-delivery
+                <span className="text-foreground">Resend</span> - our email-delivery
                 provider (Resend, Inc.). When you submit a form, it transmits your
                 message and email address to our inbox so we can read and reply.
               </>,

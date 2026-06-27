@@ -201,7 +201,7 @@ function Footer() {
               </p>
               {subscribed ? (
                 <p className="text-sm text-muted-foreground border-b border-border pb-2">
-                  ✓ Thanks — we&apos;ll be in touch.
+                  ✓ Thanks - we&apos;ll be in touch.
                 </p>
               ) : (
                 <form

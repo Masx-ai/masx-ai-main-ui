@@ -61,6 +61,6 @@ npm run cf-typegen
 
 ## License
 
-Proprietary — Copyright (c) 2025-present Ateet Vatan Bahmani. All rights reserved.
+Proprietary - Copyright (c) 2025-present Ateet Vatan Bahmani. All rights reserved.
 
 See [LICENSE](LICENSE) for terms; use of the Service is governed by the [EULA & Subscription Agreement](EULA.md).

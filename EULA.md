@@ -13,9 +13,9 @@ SPDX-License-Identifier: LicenseRef-MASX-Proprietary
 See the LICENSE file in the project root for full terms.
 -->
 
-# MASX AI — End User License & Subscription Agreement
+# MASX AI - End User License & Subscription Agreement
 
-> **TEMPLATE — NOT LEGAL ADVICE.** This document is a starting draft. Items in
+> **TEMPLATE - NOT LEGAL ADVICE.** This document is a starting draft. Items in
 > `[BRACKETS]` must be completed, and the whole agreement should be reviewed by
 > a qualified attorney in your jurisdiction before you rely on it commercially.
 
@@ -33,15 +33,15 @@ Service.
 
 ## 1. Definitions
 
-- **"Service"** — the MASX AI platform that ingests open data sources and
+- **"Service"** - the MASX AI platform that ingests open data sources and
   identifies events and signals of global and regional significance, including
   the software, APIs, pipelines, models, dashboards, and any output delivered to
   you.
-- **"Output"** — data, signals, scores, summaries, and reports the Service
+- **"Output"** - data, signals, scores, summaries, and reports the Service
   generates and makes available to you.
-- **"Subscription"** — the plan, term, and usage limits set out in an order,
+- **"Subscription"** - the plan, term, and usage limits set out in an order,
   invoice, or online checkout that references this Agreement (an "Order").
-- **"Documentation"** — usage guides and materials we make available for the
+- **"Documentation"** - usage guides and materials we make available for the
   Service.
 
 ## 2. License grant

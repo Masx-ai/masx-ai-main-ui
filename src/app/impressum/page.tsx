@@ -33,13 +33,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Impressum | MASX AI',
     description:
-      'Legal notice (Impressum) for MASX AI under § 5 DDG — operator, contact, liability, and copyright information.',
+      'Legal notice (Impressum) for MASX AI under § 5 DDG - operator, contact, liability, and copyright information.',
     url: '/impressum',
   },
   twitter: {
     title: 'Impressum | MASX AI',
     description:
-      'Legal notice (Impressum) for MASX AI under § 5 DDG — operator, contact, liability, and copyright information.',
+      'Legal notice (Impressum) for MASX AI under § 5 DDG - operator, contact, liability, and copyright information.',
   },
 };
 
@@ -53,7 +53,7 @@ export default function ImpressumPage() {
           <span className="italic text-signal-gradient">notice.</span>
         </h1>
         <p className="mt-8 max-w-xl text-lg text-muted-foreground">
-          Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz) — the operator,
+          Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz) - the operator,
           contact, and liability information required for a German-operated
           website.
         </p>
@@ -72,7 +72,7 @@ export default function ImpressumPage() {
             Information in accordance with § 5 DDG (Digitale-Dienste-Gesetz):
           </p>
           <div className="rounded-sm border border-border bg-ink/40 p-5 text-sm">
-            <p className="text-foreground">MASX AI — Ateet Vatan Bahmani</p>
+            <p className="text-foreground">MASX AI - Ateet Vatan Bahmani</p>
             <p className="mt-1">Viehofer Strasse 32</p>
             <p>45127 Essen</p>
             <p>Germany</p>

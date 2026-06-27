@@ -20,7 +20,7 @@
 :root {
   --radius: 0.25rem;
 
-  /* Surfaces — rich midnight, like a night sky with depth */
+  /* Surfaces - rich midnight, like a night sky with depth */
   --background: oklch(0.10 0.022 255);
   --foreground: oklch(0.95 0.01 80);
   --ink: oklch(0.06 0.018 255);
@@ -31,7 +31,7 @@
   --popover: oklch(0.13 0.022 255);
   --popover-foreground: oklch(0.95 0.01 80);
 
-  /* Brand: pale starlight gold — warm, human, authoritative */
+  /* Brand: pale starlight gold - warm, human, authoritative */
   --primary: oklch(0.88 0.10 90);
   --primary-foreground: oklch(0.10 0.02 255);
   --signal: oklch(0.88 0.10 90);
