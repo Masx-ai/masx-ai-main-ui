@@ -22,20 +22,20 @@ import { CaseStudy } from '@/components/site/CaseStudy';
 export const metadata: Metadata = {
   title: 'Our Work',
   description:
-    'See the MASX AI platforms for geopolitical forecasting and Bittensor intelligence, both running autonomous, calibrated prediction pipelines.',
+    'See the MASX AI platforms for Global Intelligence Forecasting and Bittensor intelligence, both running autonomous, calibrated prediction pipelines.',
   alternates: {
     canonical: '/our-work',
   },
   openGraph: {
     title: 'Our Work | MASX AI',
     description:
-      'Two production MASX AI platforms run daily forecasting pipelines for geopolitical events and Bittensor subnet intelligence.',
+      'Two production MASX AI platforms run daily forecasting pipelines for global events and Bittensor subnet intelligence.',
     url: '/our-work',
   },
   twitter: {
     title: 'Our Work | MASX AI',
     description:
-      'Two production MASX AI platforms run daily forecasting pipelines for geopolitical events and Bittensor subnet intelligence.',
+      'Two production MASX AI platforms run daily forecasting pipelines for global events and Bittensor subnet intelligence.',
   },
 };
 
@@ -56,8 +56,8 @@ export default function OurWorkPage() {
 
       <CaseStudy
         index="01"
-        eyebrow="Platform · Geopolitics"
-        title="Geopolitical Forecast"
+        eyebrow="Platform · Global Intelligence"
+        title="Global Intelligence Forecasting"
         subtitle="A daily-updated probabilistic view of the world's flashpoints."
         body="Conflicts, elections, sanctions, summits. MASX generates calibrated forecasts on the events that move markets and policy desks. 35 doctrine agents, each with a unique strategic lens, analyze hotspots through a Council of Doctrines. The result: multi-perspective intelligence grounded in 7 mathematical tools including Bayesian updating and temporal projection."
         bullets={[

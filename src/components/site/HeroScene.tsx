@@ -60,7 +60,7 @@ export function HeroScene({ variant = 'duo' }: { variant?: Variant }) {
     const SIGNAL = new THREE.Color('#D4C49A');
     const ACCENT = new THREE.Color('#8BA4BD');
 
-    // Wireframe globe (geopolitics)
+    // Wireframe globe (global intelligence)
     const globeGroup = new THREE.Group();
     const sphereGeo = new THREE.IcosahedronGeometry(1.4, 4);
     const wireMat = new THREE.LineBasicMaterial({

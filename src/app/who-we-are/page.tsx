@@ -45,7 +45,7 @@ const PRINCIPLES = [
   },
   {
     title: 'Resolve against ground truth.',
-    body: 'Geopolitical forecasts resolve via search-powered evidence sweeps. Bittensor predictions resolve programmatically against subnet snapshots.',
+    body: 'Global Intelligence forecasts resolve via search-powered evidence sweeps. Bittensor predictions resolve programmatically against subnet snapshots.',
   },
   {
     title: 'Publish the misses.',
@@ -66,7 +66,7 @@ const PRINCIPLES = [
 ];
 
 const DOMAINS = [
-  { label: 'Geopolitics & Strategy', count: 11 },
+  { label: 'Global Intelligence & Strategy', count: 11 },
   { label: 'Hybrid & Cognitive Warfare', count: 7 },
   { label: 'Economics & Systems', count: 5 },
   { label: 'Civilizational & Environmental', count: 5 },
@@ -103,7 +103,7 @@ export default function WhoWeArePage() {
             MASX AI was built on a simple conviction: forecasting shouldn&apos;t
             require armies of analysts. One agentic engine, running 24/7,
             producing scored predictions that improve with every resolution.
-            Geopolitics and Bittensor are the first two verticals. The architecture
+            Global Intelligence and Bittensor are the first two verticals. The architecture
             is domain-agnostic by design.
           </p>
         </div>

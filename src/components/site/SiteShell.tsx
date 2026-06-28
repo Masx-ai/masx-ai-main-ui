@@ -180,7 +180,7 @@ function Footer() {
                     rel="noopener noreferrer"
                     className="hover:text-signal transition-colors cursor-hover"
                   >
-                    Geopolitical Forecast ↗
+                    Global Intelligence Forecasting ↗
                   </a>
                 </li>
                 <li>

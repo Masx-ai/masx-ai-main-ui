@@ -85,7 +85,7 @@ export function ContactForm() {
       <Field label="Email"><input name="email" type="email" required className="w-full bg-transparent border-b border-border py-2 focus:outline-none focus:border-signal text-foreground" /></Field>
       <Field label="I'm interested in">
         <select name="interest" className="w-full bg-transparent border-b border-border py-2 focus:outline-none focus:border-signal text-foreground">
-          <option className="bg-background">Geopolitical Forecast Platform</option>
+          <option className="bg-background">Global Intelligence Forecasting Platform</option>
           <option className="bg-background">Bittensor Intelligence Platform</option>
           <option className="bg-background">Custom forecasting pipeline</option>
           <option className="bg-background">Partnership / Integration</option>

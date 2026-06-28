@@ -18,7 +18,7 @@ const DEFAULT_SITE_URL = 'https://masxai.com';
 export const SITE_NAME = 'MASX AI';
 export const SITE_TAGLINE = 'Autonomous Strategic Forecasting Engine';
 export const SITE_DESCRIPTION =
-  'MASX AI builds autonomous forecasting systems for geopolitical intelligence and Bittensor network health, producing calibrated, Brier-scored probabilistic predictions.';
+  'MASX AI builds autonomous forecasting systems for global intelligence and Bittensor network health, producing calibrated, Brier-scored probabilistic predictions.';
 export const SITE_FOUNDING_YEAR = '2024';
 export const SITE_CONTACT_EMAIL = 'admin@masxai.com';
 export const SITE_TWITTER = 'https://x.com/masxai';

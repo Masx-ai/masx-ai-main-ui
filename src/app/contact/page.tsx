@@ -21,7 +21,7 @@ import { ContactForm } from '@/components/site/ContactForm';
 export const metadata: Metadata = {
   title: 'Contact',
   description:
-    'Contact MASX AI about autonomous forecasting systems, enterprise access, Bittensor intelligence, or geopolitical prediction pipelines.',
+    'Contact MASX AI about autonomous forecasting systems, enterprise access, Bittensor intelligence, or Global Intelligence Forecasting pipelines.',
   alternates: {
     canonical: '/contact',
   },

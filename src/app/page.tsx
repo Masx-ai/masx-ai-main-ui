@@ -89,8 +89,8 @@ export default function Home() {
 
         <div className="mt-16 grid md:grid-cols-2 gap-6">
           <PlatformCard
-            tag="01 / Geopolitics"
-            title="Geopolitical Forecast"
+            tag="01 / Global Intelligence"
+            title="Global Intelligence Forecasting"
             blurb="Daily probabilistic forecasts on conflicts, elections, and macro events. 35 doctrine agents analyze hotspots through a Council of Doctrines, producing Bayesian-grounded predictions across 7 domains."
             href="https://forecast.masxai.com/"
             sceneVariant="globe"
@@ -162,7 +162,7 @@ export default function Home() {
             {
               label: 'Resolution',
               detail:
-                'Programmatic resolution against ground truth for both geopolitical events and Bittensor subnet metrics. Every forecast is scored.',
+                'Programmatic resolution against ground truth for both global events and Bittensor subnet metrics. Every forecast is scored.',
             },
           ].map((item) => (
             <div key={item.label} className="bg-background p-8 md:p-10 min-h-[200px] flex flex-col">
@@ -184,7 +184,7 @@ export default function Home() {
           <span className="italic text-signal-gradient">Same engine.</span>
         </h2>
         <p className="mt-8 max-w-xl text-lg text-muted-foreground">
-          Geopolitics and Bittensor are live. Energy markets, sovereign credit,
+          Global Intelligence and Bittensor are live. Energy markets, sovereign credit,
           supply chain risk, and more are next. Every forecast is resolved against
           ground truth, scored, and fed back into the engine. The more it runs,
           the better it gets.

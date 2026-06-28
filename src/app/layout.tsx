@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   keywords: [
     'MASX AI',
     'strategic forecasting',
-    'geopolitical intelligence',
+    'global intelligence',
     'Bittensor',
     'prediction calibration',
     'probabilistic forecasts',

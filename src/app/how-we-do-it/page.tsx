@@ -110,7 +110,7 @@ export default function HowWeDoItPage() {
       <section className="px-6 md:px-10 py-24">
         <div className="grid md:grid-cols-12 gap-10">
           <div className="md:col-span-5">
-            <SectionLabel index="01">Geopolitical pipeline</SectionLabel>
+            <SectionLabel index="01">Global Intelligence pipeline</SectionLabel>
             <h2 className="mt-6 text-display text-4xl md:text-6xl font-semibold leading-[0.95]">
               Six steps,<br /> from hotspot<br />to forecast.
             </h2>

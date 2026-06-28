@@ -91,7 +91,7 @@ export default function PrivacyPage() {
           <p>
             This policy covers our corporate website at{' '}
             <span className="text-foreground">masxai.com</span> only. Our product
-            platforms - the Geopolitical Forecast and Bittensor Forecast
+            platforms - the Global Intelligence Forecasting and Bittensor Forecast
             applications - are operated on separate domains and are governed by
             their own privacy notices presented within those services.
           </p>
